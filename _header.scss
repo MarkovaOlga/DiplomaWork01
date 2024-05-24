@@ -1,0 +1,32 @@
+@import 'var';
+
+.header {
+    background: rgb(130, 188, 215);
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+
+    &__buttons__left {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 18px;
+        padding-top: 18px;
+        margin-left: 231px;
+        gap: 41px;
+        width: 111px;
+    }
+    &__button:hover {
+        transform: translateY(-5px) scale(1.3);
+    }
+    &__buttons__right {
+        padding-bottom: 20px;
+        padding-top: 26px;
+        margin-right: 240px;
+        display: flex;
+        align-items: flex-end;
+        gap: 33px;
+    }
+}

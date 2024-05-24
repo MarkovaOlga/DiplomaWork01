@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main_page.css">
+    <title>Catalog</title>
+</head>
+
+<body>
+    <div class="top center">
+        <header class="header">
+            <div class="header__buttons__left">
+                <a class="header__button" href="https://developer.tekla.com/"><img src="image/Tekla-logo.svg.png" alt=""
+                        width="100px"></a>
+                
+            </div>
+            <div class="header__buttons__right">
+                
+                <a class="header__button hidemobile" href="main_page.html"><img src="image/Forma1(2).svg" alt=""></a>
+                
+            </div>
+        </header>
+        <div class="top-head">
+            <h2 class="top-head__heading">TEKLA STRUCTURES - PLUGINS - How it works?</h2>
+            
+        </div>
+    </div>
+
+    <div class="filter-sort center">
+        <details class="filter">
+            <summary class="filter__summary"><span class="filter__heading hide_when_close">СОДЕРЖАНИЕ</span> <svg
+                    class="filter__svg" width="15" height="10" viewBox="0 0 15 10" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                        fill="black" />
+                </svg>
+            </summary>
+            <div class="filter__content">
+                <details open class="filter__item">
+                    <summary class="filter__head">ЧТО ТАКОЕ ПЛАГИН?</summary>
+                    <div class="filter__link-box">
+                        <a href="page01.html" class="filter__link">Плагины. Что это такое?</a>
+                        <a href="page02.html" class="filter__link">Почему был выбран язык C#?</a>
+                        <a href="page03.html" class="filter__link">Способы разработки графического интерфейса плагина</a>
+                        <a href="page04.html" class="filter__link">Какие бывают плагины?</a>
+                        <a href="page05.html" class="filter__link">Обязательные части плагина</a>
+                    </div>
+
+                </details>
+                <details class="filter__item">
+                    <summary class="filter__head">НАПИСАНИЕ ПЛАГИНА</summary>
+                    <div class="filter__link-box">
+                        <a href="page06.html" class="filter__link">Пространства имен</a>
+                        <a href="page07.html" class="filter__link">Атрибуты</a>
+                        <a href="page08.html" class="filter__link">Класс Input_Beam</a>
+                        <a href="page09.html" class="filter__link">Метод DefineInput()</a>
+                        <a href="page10.html" class="filter__link">Метод Run
+                        </a>
+                        <a href="page11.html" class="filter__link">Класс UI_Data</a>
+                        <a href="page12.html" class="filter__link">Класс Preset</a>
+                        <a href="page13.html" class="filter__link">Main_Panel</a>
+                        <a href="page14.html" class="filter__link">Ui_Class_CheckBox</a>
+                        <a href="page15.html" class="filter__link">TextBox</a>
+                        <a href="page16.html" class="filter__link">OkApplyModifyGetOnOffCancel</a>
+                        <a href="page17.html" class="filter__link">SaveLoad</a>
+                        <a href="page18.html" class="filter__link">Метод GetValuesFromDialog()</a>
+                        <a href="page19.html" class="filter__link">Метод SetValuesFromData</a>
+                        <a href="page20.html" class="filter__link">Метод Main</a>
+                    </div>
+
+                </details>
+                <details class="filter__item">
+                    <summary class="filter__head">ТЕРМИНОЛОГИЯ</summary>
+                    <div class="filter__link-box">
+                        <a href="page_api.html" class="filter__link">Application programming interface(API)
+                        </a>
+                        <a href="page_tekla_api.html" class="filter__link">Tekla Open API</a>
+                        <a href="page_language.html" class="filter__link">Язык С#</a>
+                        <a href="page_termins.html" class="filter__link">Термины из языка C#</a>
+                    </div>
+
+                </details>
+            </div>
+        </details>
+
+    </div>
+    <div class="main_text center">
+        <div class="main_text__text">
+            <h1 class="main_text__heading">Какие бывают плагины?</h1>
+            <div class="main_text__description">
+                <p>В Tekla есть такой элемент автоматизации, как компонент. Это те действия, которые программа делает вместо пользователя. Способ задания этого алгоритма может быть разный: с помощью внутреннего редактора (в таком случае это пользовательский компонент) или с помощью программных средств (тогда это плагин). То есть существуют плагины, которые мы пишем сами, а есть плагины, реализованные программистами Tekla. И те, и другие совершают какие-либо действия, используя базовые типы объектов.</p>
+                <p>Плагины бывают предназначенные для использования в модели и  чертежные. Они имеют схожую структуру, но используют разные элементы библиотеки и имеют разное предназначение. И те, и другие плагины запрашивают у пользователя ввод данных с помощью мышки в пространстве модели или чертежа, имеют графический интерфейс (поле для ввода), но они создают разные классы объектов. Чертежные плагины создают объекты чертежа в текущем чертеже. Они служат для того, чтобы создавать аннотативные объекты (объекты, которые согласованно масштабируются при изменении масштаба вида чертежа), чтобы дополнять чертеж какими-либо элементами, которые другим способом невозможно дополнить либо это сделать крайне трудоемко. Плагин же позволяет это сделать гораздо быстрее. Также при помощи чертежных плагинов можно создавать графические таблицы. Текла имеет хороший встроенный инструментарий для создания таблиц, но его не встегда хватает и возникают ситуации, когда его нужно доработать или сделать по-другому. Также важно отметить, что не каждый элемент чертежа имеет соответствие с объектом модели. Экземпляр плагина чертежа - это объект чертежа, а экземпляр объекта плагина модели - это экземпляр объекта модели.
+                </p>
+                <p>Модельные плагины создают объекты для модели (отдельные объекты, сборки, более сложные структуры, объекты связи между другими объектами), основываясь не тех данных, которые вводит пользователь. Кроме того, плагины позволяют взаимодействовать с каталогами из Tekla.Structures.Catalog, читая, редактируя и/или создавая новые значения в каталогах профелей, материалов, арматурных стержней, метизов, комплектов болтов и геометрических форм. Но главная цель модельного плагина - создание и/или редактирование объектов модели (ModelObject). </p>
+                <p>Цель нашей работы - плагин для модели.</p>
+                <p>В пространстве имен Tekla.Structures.Model содержатся следующие типы объектов модели (их можно замоделировать с помощью модельных плагинов):</p>
+                <li>Assembly (сборка) - класс определяет строительную марку конструкции: объекты, которые соединяются болтами или свариваются вместе в мастерской. Сборка состоит из основной детали и присоединенных к ней вспомогательных сборочных элементов. Количество вспомогательных элементов ограничено 2048. К иерархическим сборкам также могут быть присоединены подсборки, и у них может быть экземпляр родительской сборки.
+                </li>
+                <li>BasePoint - класс предоставляет функциональные возможности, связанные с базовыми точками (это различное взаимодействие с разными системами координат).
+                </li>
+                <li>Beam - класс балки. Балка имеет одну начальную и одну конечную точки. Самый распространенный элемент Tekla.
+                </li>
+                <li>BentPlate - класс гнутой пластины. 
+                </li>
+                <li>BoltArray - класс определяет группу болтов в форме массива.
+                </li>
+                <li>BoltCircle - класс определяет группу болтов, имеющих форму окружности.
+                </li>
+                <li>BoltXYList - определяет группу болтов в форме списка координат XY.
+                </li>
+                <li>BooleanPart - представляет вырезанную деталь или добавленную.
+                </li>
+                <li>Brep(форма) - класс для трехмерных неизменяемых полигональных тел.
+                </li>
+                <li>Connection - класс представляет соединение. Соединение - это нечто, соединяющее две или более частей вместе.
+                </li>
+                <li>ContourPlate - класс представляет контурную пластину.
+                </li>
+                <li>ControlArc - отрисовка дуги в модели.
+                </li>
+                <li>ControlCircle - отрисовка окружности.</li>
+                <li>ControlLine - отрисовка отрезка.
+                </li>
+                <li>ControlPlane - отрисовка плоскости.
+                </li>
+                <li>ControlPoint - отрисовка точки.
+                </li>
+                <li>ControlPolycurve -  отрисовка поликривой.
+                </li>
+                <li>CurvedRebarGroup - класс представляет группу арматурных стержней, имеющих изогнутую форму.
+                </li>
+                <li>CustomPart - представляет пользовательский компонент типа деталь.
+                </li>
+                <li>CutPlane - обрезка плоскостью
+                </li>
+                <li>Detail - пользовательский компонент типа узел
+                </li>
+                <li>EdgeChamfer - класс определяет способ снятия фаски с кромки детали.
+                </li>
+                <li>Fitting - подгонка балок, помогает укорачивать и/или удлинять балки
+                </li>
+                <li>Grid - координатная сетка. Обычно алгоритму не требуется с ней взаимодействовать
+                </li>
+                <li>LoadArea - задание нарузки по площади
+                </li>
+                <li>LoadGroup - группа загружений (относится к расчетам)
+                </li>
+                <li>LoadLine - нагрузка, сосредоточенная по линиям
+                </li>
+                <li>LoadPoint - нагрузка, сосредоточенная в точке
+                </li>
+                <li>LoadTemperature - нагрузка температуры
+                </li>
+                <li>LoadUniform - нагрузка, распределяющаяся по произвольному полигону
+                </li>
+                <li>LoftedPlate - лофтинговая пластина(полученная в результате сопряжения двух дуг)
+                </li>
+                <li>LogicalWeld - представляет группу сварных швов в модели
+                </li>
+                <li>PointCloud - облако точек
+                </li>
+                <li>PolyBeam - класс полибалки
+                </li>
+                <li>PourBreak - шов бетонирования
+                </li>
+                <li>PourObject - отлитый элемент
+                </li>
+                <li>PourUnit - представляет собой единицу заливки желозобетона в модели.
+                </li>
+                <li>RadialGrid - радиально-полярная сетка
+                </li>
+                <li>RebarGroup - представляет группу арматурных стержней
+                </li>
+                <li>RebarGuideline - модификатор арматурного набора - направление армирование
+                </li>
+                <li>RebarMesh - арматурная сетка
+                </li>
+                <li>RebarSet - арматурный набор
+                </li>
+                <li>RebarSplice - представляет соединение двух арматурных элементов.
+                </li>
+                <li>RebarSplitter - представляет собой модификатор арматурного набора - линия разделитель
+                </li>
+                <li>RebarStrand - представляет предварительно напряженные пряди для бетонных деталей.
+                </li>
+                <li>Seam - пользовательский компонент типа стык
+                </li>
+                <li>SingleRebar - одиночный арматурный стержень
+                </li>
+                <li>SpiralBeam - спиральная балка
+                </li>
+                <li>SurfaceObject - обработка поверхности
+                </li>
+                <li>Weld - представляет обычный сварной шов в модели. 
+                </li>
+                <h3>Пользовательские компоненты Теклы бывают нескольких типов:
+                </h3>
+                <li>компоненты соединений (Connection), то есть связи между элементами
+                </li>
+                <li>компоненты узла (когда есть только один объект ввода) - Detail
+                </li>
+                <li>стыки (разновидность соедининий) - Seam
+                </li>
+                <li>детали (когда нет никаких входных объектов, а есть только входные точки) - CustomPart. Используются, когда нужно поставить в конкретные координаты конкретную сущность.
+                </li>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer center">
+
+        <section class="footer__copyrights">
+            <p class="footer__copyright">&copy;&nbsp;2024</p>
+            <div class="footer__social__icons">
+                <a class="footer__social__icon" href="#"><img src="image/2.svg" alt=""></a>
+                <a class="footer__social__icon" href="#"><img src="image/4.svg" alt=""></a>
+                <a class="footer__social__icon" href="#"><img src="image/5.svg" alt=""></a>
+                <a class="footer__social__icon" href="#"><img src="image/6.svg" alt=""></a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
